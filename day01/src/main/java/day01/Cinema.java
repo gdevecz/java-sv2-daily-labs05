@@ -27,7 +27,7 @@ public class Cinema {
     private boolean movieContainsTime(Movie movie, LocalDateTime time) {
 
         for (LocalDateTime date : movie.getOnScreen()) {
-            if (date.isEqual(time)) {
+            if (date.equals(time)) {
                 return true;
             }
         }
